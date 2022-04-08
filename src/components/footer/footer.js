@@ -1,4 +1,5 @@
 import './footer.css';
+import { Link } from 'wouter';
 
 function Footer() {
     return <div className="footer mt-5">
@@ -13,16 +14,16 @@ function Footer() {
                     <h5 className='quick-menu'>Quick Menu</h5> 
                     <ul>
                         <li>
-                            <a>Home</a>
+                            <Link href={`${process.env.PUBLIC_URL}/`} className="nav-link">Home</Link>
                         </li>
                         <li>
-                            <a>News</a>
+                            <Link href={`${process.env.PUBLIC_URL}/news`} className="nav-link">news</Link>
                         </li>
                         <li>
-                            <a>Stats</a>
+                            <Link href={`${process.env.PUBLIC_URL}/stats`} className="nav-link">stats</Link>
                         </li>
                         <li>
-                            <a>Battlepass</a>
+                            <Link href={`${process.env.PUBLIC_URL}/battlepass`} className="nav-link">Battle Pass</Link>
                         </li>
                     </ul>
                 </div>
