@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fortnite-app/static/css/main.e23b70cc.css",
-    "main.js": "/fortnite-app/static/js/main.02eb73b1.js",
+    "main.css": "/fortnite-app/static/css/main.2e945f0f.css",
+    "main.js": "/fortnite-app/static/js/main.ff4ff549.js",
     "static/media/character.png": "/fortnite-app/static/media/character.e4576a4f722849f5b30e.png",
     "static/media/bg-20.jpg": "/fortnite-app/static/media/bg-20.13423a94d744fa5b2b7c.jpg",
     "index.html": "/fortnite-app/index.html",
-    "main.e23b70cc.css.map": "/fortnite-app/static/css/main.e23b70cc.css.map",
-    "main.02eb73b1.js.map": "/fortnite-app/static/js/main.02eb73b1.js.map"
+    "main.2e945f0f.css.map": "/fortnite-app/static/css/main.2e945f0f.css.map",
+    "main.ff4ff549.js.map": "/fortnite-app/static/js/main.ff4ff549.js.map"
   },
   "entrypoints": [
-    "static/css/main.e23b70cc.css",
-    "static/js/main.02eb73b1.js"
+    "static/css/main.2e945f0f.css",
+    "static/js/main.ff4ff549.js"
   ]
 }
