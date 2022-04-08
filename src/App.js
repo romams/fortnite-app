@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       
       <div className='container'>
-        <Route path={`${process.env.PUBLIC_URL}/`} component={ItemsStore} />
+        <Route path={`${process.env.PUBLIC_URL}`} component={ItemsStore} />
 
         <Route path={`${process.env.PUBLIC_URL}/stats`} component={PlayerStats} />
 
