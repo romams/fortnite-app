@@ -14,13 +14,13 @@ function App() {
       <Navbar />
       
       <div className='container'>
-        <Route path={`${process.env.PUBLIC_URL}/`} component={ItemsStore} />
+        <Route path={`${process.env.PUBLIC_URL}/fortnite-app/`} component={ItemsStore} />
 
-        <Route path={`${process.env.PUBLIC_URL}/stats`} component={PlayerStats} />
+        <Route path={`${process.env.PUBLIC_URL}/fortnite-app/stats`} component={PlayerStats} />
 
-        <Route path={`${process.env.PUBLIC_URL}/news`} component={FortniteNews} />
+        <Route path={`${process.env.PUBLIC_URL}/fortnite-app/news`} component={FortniteNews} />
 
-        <Route path={`${process.env.PUBLIC_URL}/battlepass`} component={BattlePass} />
+        <Route path={`${process.env.PUBLIC_URL}/fortnite-app/battlepass`} component={BattlePass} />
       </div>
 
     </div>
