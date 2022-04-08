@@ -6,7 +6,7 @@ function Footer() {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-12 text-center">
-                    <h4 className="footer-heading">FortTracker</h4>
+                    <h4 className="footer-heading">FtTracker</h4>
                 </div>
             </div>
             <div className='col-md4 col-sm-12'>
