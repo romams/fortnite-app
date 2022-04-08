@@ -45,7 +45,8 @@ function PlayerStats() {
                         className="form-control input-search"
                         name="inputSearch"
                         placeholder="Epic ID"
-                        onChange={onInputChange} />
+                        onChange={onInputChange} 
+                        required/>
                     <button type="submit" className="btn btn-primary">Buscar</button>
                 </div>
             </form>
