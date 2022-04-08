@@ -22,7 +22,13 @@
     padding: 10px;
 }
 
-@media all and (min-width: 320px) {
+.itemShop:hover{
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+    transition: transform 0.25 ease;
+}
+
+@media all and (max-width: 992px) {
     .mainTitle {
         font-size: 3rem;
         text-align: center;
