@@ -1,5 +1,6 @@
 import './itemsStore.css';
 import {useDailyShop} from 'hooks/useDailyShop';
+import {showImg} from 'utils/viewImg';
 
 function ItemsStore() {
 
