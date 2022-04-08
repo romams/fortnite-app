@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4",
     "wouter": "^2.8.0-alpha.2"
   },
-  "homepage": "./",
+  "homepage": "https://romams.github.io/fortnite-app/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
