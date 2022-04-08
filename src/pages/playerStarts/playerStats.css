@@ -1,0 +1,134 @@
+.searchDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+}
+
+.searchDiv .input-search{
+    width: 75%;
+}
+
+.stats-title{
+    font-family: 'Boogaloo', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.errorMessage{
+    font-family: 'Boogaloo', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: red;
+}
+
+.content-head{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: first baseline;
+    font-family: 'Boogaloo', cursive;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.chapterInfo, .playerUsername, .playerLevel{
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.chapterInfo, .playerLevel{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.playerUsername{
+    font-size: 3.4rem;
+    color: white;
+}
+
+.stats-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stats-row > div {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 2px solid #ccc;
+    border-right-width: 80%;
+    width: 100%;
+}
+
+.stats-row > div > h3{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.stats-row > div > span{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.stats-row{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-family: 'Boogaloo', cursive;
+}
+
+.player-stats-content{
+    
+}
+
+.character-img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-img > img{
+    width: 110%;
+}
+
+.btn-download{
+    display: none;
+    width: auto;
+    margin: 0 auto;
+}
+
+.navbar-title{
+    font-family: 'Boogaloo', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2rem;   
+}

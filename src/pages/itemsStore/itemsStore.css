@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+.mainTitle, .sectionName{
+    font-family: 'Boogaloo', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainTitle{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.sectionName{
+    margin-top: 10px;
+    font-size: 2rem;
+    padding: 0;
+}
+
+.itemShop{
+    width: 25%;
+    padding: 10px;
+}
