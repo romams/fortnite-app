@@ -5,10 +5,10 @@ import ItemsStore from 'pages/itemsStore';
 import PlayerStats from 'pages/playerStarts';
 import FortniteNews from 'pages/fortniteNews';
 import BattlePass from 'pages/battlePass/battlePass';
+import Footer from 'components/footer/footer';
 
 function App() {
 
-  console.log(process.env.PUBLIC_URL);
   return (
     <div className="App">
       <Navbar />
@@ -22,7 +22,7 @@ function App() {
 
         <Route path={`${process.env.PUBLIC_URL}/battlepass`} component={BattlePass} />
       </div>
-
+      <Footer />
     </div>
   );
 }
