@@ -17,6 +17,9 @@ function Footer() {
                             <Link href={`${process.env.PUBLIC_URL}/`} className="nav-link">Home</Link>
                         </li>
                         <li>
+                            <Link href={`${process.env.PUBLIC_URL}/shop`} className="nav-link">Item shop</Link>
+                        </li>
+                        <li>
                             <Link href={`${process.env.PUBLIC_URL}/news`} className="nav-link">news</Link>
                         </li>
                         <li>
