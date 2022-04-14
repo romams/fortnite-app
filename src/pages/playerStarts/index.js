@@ -1,10 +1,16 @@
 import usePlayerStats from 'hooks/usePlayerStats';
 import Spinner from 'components/spinner/spinner';
 import './playerStats.css'
+import FtCrew from 'components/home/crew/ftCrew';
+import { useFtCrew } from 'hooks/useFtCrew';
+import { FcInfo} from 'react-icons/fc';
+import NewsSection from 'components/news/newsSection';
 
 function PlayerStats() {
 
     const {onSearchPlayerStats, onInputChange, playerStats, showSpinner}= usePlayerStats();
+    
+    const {ftCrew, ftCrewRewards} = useFtCrew();
 
     const converCanvasToImg = (playername) => {
         var canvas = document.getElementById("mi-canvas");
@@ -17,22 +23,6 @@ function PlayerStats() {
         
         link.click();
     }
-
-    /* const downloadImage = (blob, fileName) => {
-
-        const fakeLink = window.document.createElement("a");
-        fakeLink.style ="display:none;"
-        fakeLink.download = fileName+'.png';
-
-        fakeLink.href = blob;
-
-        document.body.appendChild(fakeLink);
-        fakeLink.click();
-
-        document.body.removeChild(fakeLink);
-
-        fakeLink.remove();
-    } */
 
     return <>
 
@@ -74,6 +64,21 @@ function PlayerStats() {
              
              </>
         }
+
+        <div className='info-stats'>
+
+            <div className='some-info'>
+                <FcInfo className="info-icon"/>
+                <p className='text-stats-info'>
+                    Introduce tu nombre de usuario de EpicGames para buscar. 
+                    Se muestran las estadisticas generales en modo solitario.
+                    Estamos trabajando para mostrarte tus estadisticas en todos los modos ;)
+                </p>
+            </div>
+
+        </div>
+
+        <NewsSection />
     </>
 }
 
