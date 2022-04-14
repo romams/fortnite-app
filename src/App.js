@@ -21,9 +21,9 @@ function App() {
         <NewsContextProvider>
           <Route path={`${process.env.PUBLIC_URL}`} component={Home} />
           <Route path={`${process.env.PUBLIC_URL}/news`} component={FortniteNews} />
+          <Route path={`${process.env.PUBLIC_URL}/stats`} component={PlayerStats} />
         </NewsContextProvider>        
 
-        <Route path={`${process.env.PUBLIC_URL}/stats`} component={PlayerStats} />
         <Route path={`${process.env.PUBLIC_URL}/shop`} component={ItemsStore} />
         <Route path={`${process.env.PUBLIC_URL}/battlepass`} component={BattlePass} />
         <Route path={`${process.env.PUBLIC_URL}/items`} component={Items} />
