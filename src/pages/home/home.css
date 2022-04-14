@@ -29,7 +29,7 @@
     background-color: rgba(0, 0, 0, .5);
 }
 
-.ft-crew-title{
+.ft-crew-title, .current-map-section-title{
     font-family: 'Boogaloo', cursive;
     font-weight: bold;
     text-transform: uppercase;
@@ -63,4 +63,20 @@
     font-family: 'Boogaloo', cursive;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.curent-map{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .curent-map{
+        width: 100%;
+    }   
+
+    .ft-crew-title, .current-map-section-title{
+        font-size: 1.8rem;
+    }
 }
