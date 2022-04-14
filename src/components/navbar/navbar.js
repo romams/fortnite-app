@@ -5,7 +5,7 @@ function Navbar() {
   
   return <>
     <header id="header">
-      {/* <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
                 <a className="navbar-brand navbar-title" href="#">FtTracker</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,21 +21,7 @@ function Navbar() {
                   </div>
 
               </div>
-          </nav> */}
-
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a className="navbar-brand navbar-title" href="#">FtTracker</a>
-        <ul className="nav-links">
-          <input type="checkbox" id="checkbox_toggle" />
-          <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
-          <div className="menu navbar-nav navbar-nav">
-            <Link href={`${process.env.PUBLIC_URL}/`} className="nav-link">Home</Link>
-            <Link href={`${process.env.PUBLIC_URL}/news`} className="nav-link">news</Link>
-            <Link href={`${process.env.PUBLIC_URL}/stats`} className="nav-link">stats</Link>
-            <Link href={`${process.env.PUBLIC_URL}/battlepass`} className="nav-link">Battle Pass</Link>
-          </div>
-        </ul>
-      </nav>
+          </nav>
     </header>
   </>
 }
