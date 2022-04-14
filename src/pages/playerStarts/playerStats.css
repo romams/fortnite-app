@@ -117,7 +117,7 @@
 }
 
 .character-img > img{
-    width: 110%;
+    width: 100%;
 }
 
 .btn-download{
@@ -131,4 +131,59 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .2rem;   
+}
+
+.info-stats{
+    border-style: dashed;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-stats p {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.5rem;
+    padding-top: 0;
+}
+
+.info-icon{
+    font-size: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 992px) {
+    .info-icon{
+        font-size: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .info-stats{
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .info-icon{
+        font-size: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .info-stats p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .info-stats{
+        width: 100%;
+    }
+
 }
