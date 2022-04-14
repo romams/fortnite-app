@@ -1,18 +1,10 @@
 import './ftNews.css'
-import { useEffect, useState } from "react";
-import { getFortniteNews } from 'services/getFtNews'
+import {useFortniteNews} from 'hooks/useFortniteNews';
 
 function FortniteNews() {
 
-    const [ftNews, setFtNews] = useState([]);
+    const {ftNews} = useFortniteNews();
 
-    useEffect(() => {
-
-        getFortniteNews().then(({ news }) => setFtNews(news))
-
-    }, [])
-
-    console.log(ftNews);
     return <>
         <p className="text-center ft-news-title mt-4 mb-4">Fortnite News</p>
 
