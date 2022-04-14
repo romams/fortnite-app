@@ -13,11 +13,11 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav navbar-nav-scroll" style={{bsScrollHeight: '100px'}}>
-                      <Link href={`${process.env.PUBLIC_URL}/`} className="nav-link">Home</Link>
-                      <Link href={`${process.env.PUBLIC_URL}/shop`} className="nav-link">Item shop</Link>
-                      <Link href={`${process.env.PUBLIC_URL}/news`} className="nav-link">news</Link>
-                      <Link href={`${process.env.PUBLIC_URL}/stats`} className="nav-link">stats</Link>
-                      <Link href={`${process.env.PUBLIC_URL}/battlepass`} className="nav-link">Battle Pass</Link>
+                      <Link href={`${process.env.PUBLIC_URL}/`} className="nav-link">Inicio</Link>
+                      <Link href={`${process.env.PUBLIC_URL}/shop`} className="nav-link">Tienda</Link>
+                      <Link href={`${process.env.PUBLIC_URL}/news`} className="nav-link">Noticas</Link>
+                      <Link href={`${process.env.PUBLIC_URL}/stats`} className="nav-link">Estadisticas</Link>
+                      <Link href={`${process.env.PUBLIC_URL}/battlepass`} className="nav-link">Pase de batalla</Link>
                     </div>
                   </div>
 
