@@ -1,12 +1,14 @@
 import './home.css';
 import {useFortniteNews} from 'hooks/useFortniteNews';
 import {useFtCrew} from 'hooks/useFtCrew';
+import { useCurrentMap } from 'hooks/useCurrentMap';
 
 function Home() {
 
     const {ftNews} = useFortniteNews();
     const {ftCrew, ftCrewRewards} = useFtCrew();
-
+    const {currentMap} = useCurrentMap();
+    
     return <>
 
         <div id="carouselExampleCaptions" className="carousel slide mt-4" data-bs-ride="carousel">
@@ -53,20 +55,27 @@ function Home() {
                     {
                         ftCrewRewards?.map((reward) => {
                             return <div className="card reward-card-img text-white" key={reward?.item?.id}>
-                                    <img 
-                                        src={reward?.item?.images?.background}
-                                        className="card-img crew-reward-img" 
-                                        alt="..." />
+                                <img
+                                    src={reward?.item?.images?.background}
+                                    className="card-img crew-reward-img"
+                                    alt="..." />
 
-                                        <div className="card-img-overlay">
-                                            <h6 className="card-title">{reward?.item?.name}</h6>
-                                            <p className="card-text">{reward?.item?.description}</p>
-                                        </div>
+                                <div className="card-img-overlay">
+                                    <h6 className="card-title">{reward?.item?.name}</h6>
+                                    <p className="card-text">{reward?.item?.description}</p>
                                 </div>
+                            </div>
                         })
                     }
                    
                 </div>
+            </div>
+        </div>
+
+        <div className='row'>
+            <div className='col-md-12 col-sm-12'>
+                <p className='current-map-section-title'>Mapa del Capitulo 3 Temporada 2</p>
+                <img src={currentMap} alt="current Map" className="curent-map"/>
             </div>
         </div>
     </>
