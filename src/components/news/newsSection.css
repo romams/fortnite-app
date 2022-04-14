@@ -1,0 +1,46 @@
+.news-section-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-card{
+    width: 24%;
+}
+
+.news-section-title{
+    font-family: 'Boogaloo', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .news-section-title{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    
+    .news-card{
+        width: 48%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .news-section-row{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .news-card{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
