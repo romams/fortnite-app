@@ -79,4 +79,12 @@
     .ft-crew-title, .current-map-section-title{
         font-size: 1.8rem;
     }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-title, .carousel-body{
+        font-size: 12px;
+    }
+
 }
