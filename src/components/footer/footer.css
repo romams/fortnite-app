@@ -48,3 +48,20 @@
     color: white;
     font-size: .8rem;
 }
+
+.github-credits{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.github-credits p{
+    font-size: 1.2rem;
+}
+
+.github-credits .github-icon{
+    font-size: 5rem;
+}
