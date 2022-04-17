@@ -6,7 +6,7 @@ const NewsSection = () => {
     const {ftNews} = useFortniteNews();
 
     return <>
-        <p className='news-section-title'>Noticias Fornite</p>
+        <p className='section-title'>Noticias Fornite</p>
         
         <div className='news-section-row'>
             {

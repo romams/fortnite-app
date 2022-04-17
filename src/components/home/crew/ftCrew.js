@@ -2,7 +2,7 @@
 const FtCrew = ({ftCrew, ftCrewRewards}) => {
 
     return <div className='row'>
-        <p className='ft-crew-title'>Club fortnite</p>
+        <p className='section-title'>Club fortnite</p>
 
         <div className='col-md-7 col-sm-12'>
             <div className="card">
