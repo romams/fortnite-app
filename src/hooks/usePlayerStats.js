@@ -25,13 +25,13 @@ function usePlayerStats() {
         setShowSppiner(true);
 
         if(playerUsername.inputSearch!==''){
-            console.log(window.navigator.onLine)
+            
             if(window.navigator.onLine){
                 
                 try {
                     getGloblalPlayerStats(playerUsername.inputSearch)
                         .then(stats => {
-                            setPlayerStats(stats);
+                            setPlayerStats(stats.global_stats);
                             
                             setShowSppiner(false)
                             
