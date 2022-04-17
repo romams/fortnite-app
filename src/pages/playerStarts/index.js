@@ -1,16 +1,14 @@
+import './playerStats.css'
 import usePlayerStats from 'hooks/usePlayerStats';
 import Spinner from 'components/spinner/spinner';
-import './playerStats.css'
-import FtCrew from 'components/home/crew/ftCrew';
-import { useFtCrew } from 'hooks/useFtCrew';
 import { FcInfo} from 'react-icons/fc';
 import NewsSection from 'components/news/newsSection';
+import CardStats from 'components/stast/card/cardStats';
+
 
 function PlayerStats() {
 
     const {onSearchPlayerStats, onInputChange, playerStats, showSpinner}= usePlayerStats();
-    
-    const {ftCrew, ftCrewRewards} = useFtCrew();
 
     const converCanvasToImg = (playername) => {
         var canvas = document.getElementById("mi-canvas");
@@ -26,7 +24,7 @@ function PlayerStats() {
 
     return <>
 
-        <p className="text-center mt-4 stats-title">Fortnite Stats</p>
+        <p className="text-center mt-4 section-title">Fortnite Stats</p>
 
         <div className="row justify-content-md-center">
             <form className="searchForm mt-1 col-md-6 col-sm-12" onSubmit={onSearchPlayerStats}>
@@ -65,7 +63,22 @@ function PlayerStats() {
              </>
         }
 
-        <div className='info-stats'>
+        <p className='complete-stats'>Más información</p>
+        
+        <div className='card-stats-row'>
+            {
+                playerStats !== {} && (
+
+                    Object.keys(playerStats).map((mode) => {
+    
+                        return <CardStats gameMode={mode} stats={playerStats[mode]} key={mode}/>
+    
+                    })
+                )
+            }
+        </div>
+
+        <div className='info-stats mt-4'>
 
             <div className='some-info'>
                 <FcInfo className="info-icon"/>
