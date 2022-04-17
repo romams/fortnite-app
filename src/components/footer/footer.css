@@ -59,9 +59,23 @@
 }
 
 .github-credits p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .github-credits .github-icon{
     font-size: 5rem;
+}
+
+.github-credits .footer-credits{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.footer-credits a{
+    color: #e9ecef;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;   
 }

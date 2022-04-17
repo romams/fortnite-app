@@ -42,23 +42,13 @@ function Footer() {
                     <div className='github-credits'>
                         <p>Alojado con <AiFillHeart /> en </p>
                         <GoMarkGithub  className='github-icon'/>
+
+                        <p className='footer-credits mt-1'>Datos obtenidos de <a href='https://fortniteapi.com'>FortniteApi</a></p>
+                        <p className='footer-credits'>Desarrollado por <a href='#'>Romario Mojica</a></p>
                     </div>
                 </div>
 
 
-            </div>
-            <div className="row mt-3">
-                <div className="col-md-12 col-sm-12 copyright">
-                    {/* <p>
-                        Desarrollado por <span style={{ color: '#ffffff' }}>Romario M.</span>
-                    </p>
-                    <p>
-                        Este sitio web no está asociado a Epic Games. Todos los datos son recolectados de <a href='https://fortniteapi.io'>fortniteapi.io</a>
-                    </p>
-                    <p>
-                        Alojado en <a href='https://github.com'>GitHub</a>
-                    </p> */}
-                </div>
             </div>
         </div>
     </div>
