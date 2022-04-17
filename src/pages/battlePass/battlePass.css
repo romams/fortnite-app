@@ -1,15 +1,9 @@
-.battlepass-title, .battlepass-chapterseason, .rewards-title{
-    font-size: 3rem;
-    font-family: 'Boogaloo', cursive;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .battlepass-chapterseason{
     font-size: 2rem;
     font-family: 'Boogaloo', cursive;
     font-weight: bold;
-    text-transform: uppercase;   
+    text-transform: uppercase;  
+    color: #0dcaf0; 
 }
 
 .battlepass-page-content{
@@ -20,7 +14,6 @@
 }
 
 .rewards-content{    
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -36,6 +29,7 @@
     font-family: 'Boogaloo', cursive;
     font-weight: bold;
     text-transform: uppercase;
+    color: #0d6efd;
 }
 
 @media (max-width: 992px) {
@@ -55,7 +49,7 @@
     margin-top: 10px;
   } 
 
-  .battlepass-title, .battlepass-chapterseason, .rewards-title{
+  .battlepass-chapterseason, .rewards-title{
     font-size: 1.4rem;
   }
 

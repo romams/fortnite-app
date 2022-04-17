@@ -6,7 +6,7 @@ function BattlePass(){
     const { battlePassData, battlePassRewards} = useBattlePass();
 
     return <>
-        <p className='text-center battlepass-title'>
+        <p className='text-center section-title'>
             {battlePassData.displayInfo?.battlepassName}
         </p>
 
@@ -14,25 +14,8 @@ function BattlePass(){
             {battlePassData.displayInfo?.chapterSeason}
         </p>
 
-        <div className='row'>
-            {
-                battlePassData?.videos?.length > 0 && (
-                    battlePassData?.videos.map(video =>  
-                        <video key={video?.url}
-                            src={video?.url}
-                            className='col-md-6 col-sm-12 battlepass-video'
-                            controls>
-                            
-                            Your browser does not support the video tag.
-            
-                        </video>
-                    )
-                )
-            }
-        </div>
-
         <div className="main">
-            <h2 className='rewards-title mt-4'>Recompensas del pase de batalla</h2>
+            <h2 className='section-title rewards-title mt-4'>Recompensas del pase de batalla</h2>
             <hr />
             {
                 Object.keys(battlePassRewards).map((item, idx) => {
