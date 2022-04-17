@@ -7,7 +7,7 @@ function ItemsStore() {
     const {itemsShop} = useDailyShop();
     
     return <>
-        <p className="text-center mainTitle">TIENDA FORTNITE</p>
+        <p className="text-center section-title">TIENDA FORTNITE</p>
 
         <div className="main container">
 
@@ -16,7 +16,7 @@ function ItemsStore() {
 
                     return <div key={idx} className="section-container">
 
-                        <p className='sectionName'>{e}</p>
+                        <p className='section-title'>{e}</p>
 
                         {
                             itemsShop[e].map(imgURL => <img src={imgURL} alt={e} className='itemShop'/>)
