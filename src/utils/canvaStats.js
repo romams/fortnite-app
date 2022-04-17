@@ -1,5 +1,6 @@
 import bgTemplate from 'img/bg-20.jpg';
 import characterimg from 'img/character.png'
+import { separator } from './minutesToDays';
 
 function cargarContextoCanvas(idCanvas){
     var elemento = document.getElementById(idCanvas);
@@ -21,6 +22,7 @@ export const loadCanvas = (playerStats) => {
     let errorh3 = document.querySelector('.errorMessage');
     let canvasel = document.getElementById('mi-canvas');
     let btnDownload = document.querySelector('.btn-download');
+    let statsLabel = document.querySelector('.complete-stats');
 
     if(playerStats.result === true){
         
@@ -31,12 +33,12 @@ export const loadCanvas = (playerStats) => {
         const {global_stats} = playerStats;
         const {solo} = global_stats;
         
-        const wins = solo?.placetop1;
+        const wins = separator(solo?.placetop1);
         const winrate = solo?.winrate;
-        const matches = solo?.matchesplayed;
+        const matches = separator(solo?.matchesplayed);
         const kd = solo?.kd;
-        const killsmatch = (solo?.kills / matches).toString();
-        const kills = solo?.kills;
+        const killsmatch = (solo?.kills / solo?.matchesplayed).toString();
+        const kills = separator(solo?.kills);
     
         if(ctx){
             var bg = new Image()
@@ -73,12 +75,13 @@ export const loadCanvas = (playerStats) => {
             
             canvasel.style = 'display: block;';
             btnDownload.style = 'display: block;';
+            statsLabel.style = 'display: block;';
         }
     }else{
 
         canvasel.style = 'display: none;';
         btnDownload.style = 'display: none;';
-
+        statsLabel.style = 'display: none;';
         errorh3.textContent = playerStats.error || playerStats.message;
     }
 }
