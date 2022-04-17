@@ -29,16 +29,6 @@
     background-color: rgba(0, 0, 0, .5);
 }
 
-.ft-crew-title, .current-map-section-title{
-    font-family: 'Boogaloo', cursive;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 2.6rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    padding: 0;
-}
-
 .reward-card-img{
     width: 50%;
     height: 180px;
