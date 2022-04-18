@@ -44,7 +44,7 @@ function Footer() {
                         <GoMarkGithub  className='github-icon'/>
 
                         <p className='footer-credits mt-1'>Datos obtenidos de <a href='https://fortniteapi.com'>FortniteApi</a></p>
-                        <p className='footer-credits'>Desarrollado por <a href='#'>Romario Mojica</a></p>
+                        <p className='footer-credits'>Diseñado por <a href='#'>Romario Mojica</a></p>
                     </div>
                 </div>
 
