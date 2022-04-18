@@ -76,4 +76,12 @@
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    .stats-section{
+        font: 1.1rem;
+    }
+
+    .card-numbers{
+        font-size: 1.3rem;
+    }
 }
