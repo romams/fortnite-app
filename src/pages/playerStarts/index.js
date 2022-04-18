@@ -22,7 +22,7 @@ function PlayerStats() {
         link.click();
     }
 
-    return <>
+    return <div className='container'>
 
         <p className="text-center mt-4 section-title">Fortnite Stats</p>
 
@@ -47,7 +47,7 @@ function PlayerStats() {
              showSpinner ? <Spinner /> : <>
              
                 <div className='row player-stats-content'>
-                    <button className='btn btn-primary mb-4 btn-download' onClick={() => converCanvasToImg(playerStats.name)}>Download</button>
+                    <button className='btn btn-primary mb-4 btn-download' onClick={() => converCanvasToImg(playerStats.name)}>Descargar</button>
 
                     <canvas
                         style={{ display: "none", width: "100%", borderRadius: "8px" }}
@@ -92,7 +92,7 @@ function PlayerStats() {
         </div>
 
         <NewsSection />
-    </>
+    </div>
 }
 
 export default PlayerStats;
