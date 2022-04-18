@@ -11,8 +11,8 @@ const NewsSection = () => {
         <div className='news-section-row'>
             {
                 ftNews?.length > 0 ?
-                    ftNews.slice(0,4).map((sn, idx) => {
-                        return <div className="card news-card col-sm-12" key={idx}>
+                    ftNews.slice(0,4).map((sn) => {
+                        return <div className="card news-card col-sm-12" key={sn.id}>
                             <img src={sn.image} className="card-img-top" alt="..." />
                             <div className="card-body">
                             <h5 className="card-title">{sn.title}</h5>
