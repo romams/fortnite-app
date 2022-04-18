@@ -5,7 +5,7 @@ function FortniteNews() {
 
     const {ftNews} = useFortniteNews();
 
-    return <>
+    return <div className='container'>
         <p className="text-center section-title mt-4 mb-4">Fortnite News</p>
 
         <div className="row justify-content-md-center">
@@ -36,7 +36,7 @@ function FortniteNews() {
             }
 
         </div>
-    </>
+    </div>
 }
 
 export default FortniteNews;
