@@ -15,7 +15,7 @@ const ItemShop = () => {
                     <div className="itemshop-section">    
                         {
                             itemsShop[section]
-                                .slice(0,7)
+                                .slice(0,6)
                                 .map((item, idx) => <img src={item} alt="..." key={idx}/>)
                         }
                     </div>
@@ -23,7 +23,7 @@ const ItemShop = () => {
             })
         }
 
-        <div className="view-items-shop section-title">
+        <div className="view-items-shop">
             <Link href={`${process.env.PUBLIC_URL}/shop`}>Ver tienda completa</Link>
         </div>
     </div>
