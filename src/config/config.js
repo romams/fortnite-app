@@ -1,1 +1,2 @@
 export const API_KEY = '88a08ed0-f6df5733-3619fa5a-444d286c';
+export const FORTNITEAPIKEY =  "56d66467-5934-4056-a836-97863d6205d1";
