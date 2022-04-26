@@ -1,0 +1,30 @@
+
+.item-icon{
+    border: 1px dashed black;
+    margin-bottom: 1rem;
+}
+
+.item-icon, .img-item{
+    border-radius: 15px;
+    width: 120px;
+    height: 145px;
+}
+
+.item-icon-name{
+    text-align: center;
+}
+
+.nav-cosmetics{
+    display: none;
+}
+
+@media (max-width: 992px) {
+   
+    .nav-cosmetics{
+        display: block;
+    }
+
+    .nav-tab-cosmetics{
+        display: none;
+    }
+}
