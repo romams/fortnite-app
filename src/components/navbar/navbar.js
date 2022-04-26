@@ -16,6 +16,7 @@ function Navbar() {
                       <Link href={`${process.env.PUBLIC_URL}/`} className="nav-link">Inicio</Link>
                       <Link href={`${process.env.PUBLIC_URL}/shop`} className="nav-link">Tienda</Link>
                       <Link href={`${process.env.PUBLIC_URL}/news`} className="nav-link">Noticas</Link>
+                      <Link href={`${process.env.PUBLIC_URL}/items`} className="nav-link">Items</Link>
                       <Link href={`${process.env.PUBLIC_URL}/stats`} className="nav-link">Estadisticas</Link>
                       <Link href={`${process.env.PUBLIC_URL}/battlepass`} className="nav-link">Pase de batalla</Link>
                     </div>
