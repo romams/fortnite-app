@@ -8,7 +8,9 @@ import FortniteNews from 'pages/fortniteNews';
 import BattlePass from 'pages/battlePass/battlePass';
 import Home from 'pages/home';
 import {NewsContextProvider} from 'context/newContext';
+import { ItemContextProvider } from 'context/itemModalContext';
 import Items from 'pages/items/items';
+import ModalItem from 'components/modalItem/modalItem';
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
     <div className="App">
       <Navbar />
       
+
       <NewsContextProvider>
         <Route path={`${process.env.PUBLIC_URL}`} component={Home} />
         <Route path={`${process.env.PUBLIC_URL}/news`} component={FortniteNews} />
@@ -25,7 +28,11 @@ function App() {
       <div className='container'>
         <Route path={`${process.env.PUBLIC_URL}/shop`} component={ItemsStore} />
         <Route path={`${process.env.PUBLIC_URL}/battlepass`} component={BattlePass} />
-        <Route path={`${process.env.PUBLIC_URL}/items`} component={Items} />
+        
+        <ItemContextProvider>
+          <Route path={`${process.env.PUBLIC_URL}/items`} component={Items} />
+          <ModalItem />
+        </ItemContextProvider>
 
       </div>
       <Footer />
