@@ -1,15 +1,15 @@
 import ItemsContent from "components/items/itemsContent/itemsContent";
+import useItemSelected from "hooks/useItemSelected";
 import { useState } from "react";
-import { Link } from "wouter";
 
 
 function Items(){
+    const [cosmeticType, setCosmeticType] = useState('outfit');
     const cosmeticsType = [
         'Outfit', 'Emote', 'Backpack', 
         'Pickaxe', 'Glider', 'Contrail', 
         'Wrap', 'Spray', 'Emoji', 'Toy', 'Loadingscreen', 'Music'];
         
-    const [cosmeticType, setCosmeticType] = useState('outfit');
 
     const printType = (type) => {
 
@@ -17,7 +17,6 @@ function Items(){
     }
 
     return <>
-
         <ul className="nav nav-tabs mb-3 mt-4 nav-tab-cosmetics" id="pills-tab" role="tablist">
             {
                 cosmeticsType.map((type,idx) => {
@@ -54,7 +53,6 @@ function Items(){
                                 </li>
                             })
                         }
-
 
                     </div>
                 </div>
