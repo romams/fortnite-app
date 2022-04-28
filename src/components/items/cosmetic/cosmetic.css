@@ -1,13 +1,9 @@
-
-.item-icon{
-    border: 1px dashed black;
-    margin-bottom: 1rem;
-}
-
-.item-icon, .img-item{
+.item-icon-img, .img-item{
     border-radius: 15px;
     width: 120px;
     height: 145px;
+    border: 1px dashed black;
+    margin-bottom: 1rem;
 }
 
 .item-icon-name{
