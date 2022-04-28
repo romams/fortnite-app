@@ -5,7 +5,7 @@ export const useItems = (type) => {
 
     const [cosmetics, setCosmetics] = useState([]);
     
-    if(type === '') type = 'outfit';
+    if(type === '' || undefined || null) type = 'outfit';
     
     useEffect(() => {
 
