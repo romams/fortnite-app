@@ -4,15 +4,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: teal;
-    color: #fff;
+
    }
-   .nav-links a {
-    color: #fff;
+   .nav-link{
+    color: rgba(66, 66, 66, 0.55) !important;
    }
    /* LOGO */
-   .logo {
-    font-size: 32px;
+   .navbar-title {
+    color: rgba(66, 66, 66, 0.55) !important;
+    font-weight: 600;
    }
    /* NAVBAR MENU */
    .menu {
@@ -30,7 +30,7 @@
    }
    /* DROPDOWN MENU */
    .services {
-    position: relative; 
+    position: relative;
    }
    .dropdown {
     background-color: rgb(1, 139, 139);
@@ -62,7 +62,7 @@
     font-family: 'Boogaloo', cursive;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;       
+    color: white;
 }
 
 input[type=checkbox] {
@@ -77,7 +77,7 @@ input[type=checkbox] {
 }
 
 .navbar{
-    background-color: #fd7e14;
+    background-color: #f7e03c;
 }
 
 /* APPLYING MEDIA QUERIES */

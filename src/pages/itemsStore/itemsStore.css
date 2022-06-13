@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 
 .itemShop{
-    width: 25%;
+    width: 10%;
     padding: 10px;
-}
-
-.itemShop:hover{
-    -webkit-transform:scale(1.5); /* or some other value */
-    transform:scale(1.5);
-    transition: transform 0.25 ease;
 }
 
 @media all and (max-width: 992px) {

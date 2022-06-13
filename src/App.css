@@ -2,8 +2,32 @@
     font-family: 'Boogaloo', cursive;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 2.6rem;
-    color: #fd7e14;
+    font-size: 1.6rem;
+    color: #f7e03c;
     margin-top: 1rem;
     margin-bottom: 0;
+}
+
+.ft-btn-style{
+  padding: 5px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  background-color: black;
+  color:white;
+  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
+  font-size: 1.5em;
+  font-family: 'Boogaloo', cursive;
+  text-decoration: none;
+}
+
+.ft-btn-style:hover{
+  color: white;
+}
+
+.truncate-text{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

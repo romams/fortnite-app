@@ -7,6 +7,7 @@
 
 .news-card{
     width: 24%;
+    margin-bottom: 2rem;
 }
 
 .news-section-title{
@@ -23,7 +24,7 @@
         font-size: 1.6rem;
         margin-top: 2rem;
     }
-    
+
     .news-card{
         width: 48%;
         margin-bottom: 1rem;

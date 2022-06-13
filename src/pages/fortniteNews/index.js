@@ -1,5 +1,6 @@
 import './ftNews.css'
 import {useFortniteNews} from 'hooks/useFortniteNews';
+import {Link} from 'wouter';
 
 function FortniteNews() {
 
@@ -26,8 +27,10 @@ function FortniteNews() {
                                 )
                             }
                             <div className="card-body">
-                                <h5 className="card-title">{item?.title}</h5>
-                                <p className="card-text">{item?.body}</p>
+                                <Link
+                                  to={`${process.env.PUBLIC_URL}/news/detail/${item?.id}`}
+                                  className="card-title card-link">{item?.title}</Link>
+                                <p className="card-text truncate-text">{item?.body}</p>
                                 <p className="card-text"><small className="text-muted">{item.date}</small></p>
                             </div>
                         </div>

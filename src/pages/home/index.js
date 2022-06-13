@@ -7,30 +7,20 @@ import NewsSection from 'components/news/newsSection';
 import ItemShop from 'components/home/itemShop/itemShop';
 
 function Home() {
-    const {ftCrew, ftCrewRewards} = useFtCrew();
-    const {currentMap} = useCurrentMap();
-    
+
     return <>
-        <img 
-            src='https://cdn2.unrealengine.com/fortnite-chapter-3-season-2-1900x600-c561fe397af1.jpg'
+        <img
+            src='https://pbs.twimg.com/media/FUe1hqiWYAEuTQF?format=jpg&name=large'
             className='header-img'
             alt='season-bg' />
 
-        <div className='container'>
-            <NewsSection />
-            
-            <FtCrew ftCrew={ftCrew} ftCrewRewards={ftCrewRewards}/>
+        <div className='container home-main-content'>
 
-            <div className='row'>
-                <div className='col-lg-8 col-md-12'>
-                    <CurrentMap currentMap={currentMap} /> 
-                </div>
-                <div className='col-lg-4 col-md-12'>
-                    <ItemShop />
-                </div>
-            </div>
+            <NewsSection />
+
+            <ItemShop />
         </div>
-        
+
     </>
 }
 

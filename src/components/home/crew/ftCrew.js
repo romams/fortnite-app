@@ -2,8 +2,6 @@
 const FtCrew = ({ftCrew, ftCrewRewards}) => {
 
     return <div className='row'>
-        <p className='section-title'>Club fortnite</p>
-
         <div className='col-lg-7 col-md-12'>
             <div className="card">
                 <img src={ftCrew?.images?.apiRender} className="card-img-top" alt="..." />

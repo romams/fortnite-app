@@ -1,0 +1,15 @@
+.news-detail-img-header{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.currentNewsItem-title, .currentNewsItem-text{
+  font-size: 2.2rem;
+  display: block;
+}
+
+.currentNewsItem-text{
+  font-weight: 300;
+}
